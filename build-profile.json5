@@ -1,0 +1,57 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "material": {
+          "certpath": "C:/Users/Jason/.ohos/config/openharmony/default_OhosOpenCode_EW7WtRg-JbqnsoYHxW2pC1D9eL9xKyD6B9RhWX7iCuI=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001A25C7582F63C495AE4D77EDCA7656D64A37E36CC272641B1C161F73D2C8CF7DC556D6EBDC9A65",
+          "profile": "C:/Users/Jason/.ohos/config/openharmony/default_OhosOpenCode_EW7WtRg-JbqnsoYHxW2pC1D9eL9xKyD6B9RhWX7iCuI=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:/Users/Jason/.ohos/config/openharmony/default_OhosOpenCode_EW7WtRg-JbqnsoYHxW2pC1D9eL9xKyD6B9RhWX7iCuI=.p12",
+          "storePassword": "0000001ACC2AD2CA8A658CA841B80B69CFE2DF4690D193D769B5238E554DB6D9D87CB3F6C146C148DAA8"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": 12,
+        "compatibleSdkVersion": 12,
+        "compileSdkVersion": 12,
+        "runtimeOS": "OpenHarmony",
+        "buildOption": {
+          "nativeCompiler": "BiSheng",
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
